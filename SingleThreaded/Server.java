@@ -17,7 +17,7 @@ while(true){
     System.out.println("connection accepted from clinet"+acceptedConnection.getRemoteSocketAddress());
     PrintWriter toClient=new PrintWriter(acceptedConnection.getOutputStream());
     BufferedReader fromClient=new BufferedReader(new InputStreamReader(acceptedConnection.getInputStream()));
-toClient.println("hello from the server"); 
+toClient.println(" hello from the server"); 
 toClient.close();
 fromClient.close();
 acceptedConnection.close();

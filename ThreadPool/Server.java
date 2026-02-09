@@ -21,8 +21,8 @@ public class Server {
                 "Hello from server " + clientSocket.getInetAddress()
             );
 
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             try {
                 clientSocket.close();
